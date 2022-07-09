@@ -9,17 +9,17 @@ package paquete04;
  *
  * @author reroes
  */
-public class TransporteBus extends Transporte {
+public class TransporteAereo extends Transporte {
 
     private String cooperativaBus;
 
-    public void establecerCooperativaBus(String n) {
+    public void establecerAvion(String n) {
         cooperativaBus = n;
     }
 
     @Override
     public void establecerTarifa() {
-        tarifa = 2.00 + 0.20;
+        tarifa = 100.00 + 20;
     }
 
     public String obtenerCooperativaBus() {
@@ -28,7 +28,7 @@ public class TransporteBus extends Transporte {
     
     @Override
     public String toString(){
-        String cadena = String.format("Transporte Bus: $ %.2f\n", obtenerTarifa());
+        String cadena = String.format("Transporte Aereo: $ %.2f\n", obtenerTarifa());
         return cadena;
     }
 }
