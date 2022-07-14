@@ -4,15 +4,14 @@
  * and open the template in the editor.
  */
 package paquete10;
+import java.io.Serializable;
 
-
-public class APINetflix implements APIMovie{
-    
+public class APINetflix implements APIMovie,Serializable{
     private String apiKey;
     
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+123123;
+        apiKey = String.format("%s%s", ak, "123123");
     }
     
     @Override
@@ -20,4 +19,8 @@ public class APINetflix implements APIMovie{
         return apiKey;
     }
     
+    @Override
+    public String toString() {
+        return "Netflix";
+    }
 }

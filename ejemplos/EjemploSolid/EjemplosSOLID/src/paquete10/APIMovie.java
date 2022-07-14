@@ -4,15 +4,13 @@
  * and open the template in the editor.
  */
 package paquete10;
-
+import java.io.Serializable;
 /**
  *
  * @author reroes
  */
-public interface APIMovie {
+public interface APIMovie{
     
     public void establecerApiKey(String ak);
-    
     public String obtenerApiKey();
-    
 }

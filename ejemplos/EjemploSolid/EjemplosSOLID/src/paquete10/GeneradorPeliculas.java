@@ -4,8 +4,9 @@
  * and open the template in the editor.
  */
 package paquete10;
+import java.io.Serializable;
 
-public class GeneradorPeliculas {
+public class GeneradorPeliculas implements Serializable{
     
     private APIMovie llave;
     private String url;
@@ -15,7 +16,7 @@ public class GeneradorPeliculas {
     }
     
     public void establecerUrl(String l){
-        url = String.format("%s%s", l, obtenerLlave().obtenerApiKey());
+        url = String.format("%s%s",l, obtenerLlave().obtenerApiKey());
     }
     
     public APIMovie obtenerLlave(){
@@ -26,4 +27,11 @@ public class GeneradorPeliculas {
         return url;
     }
     
+    @Override
+    public String toString() {
+        String cadena = String.format("%s%s",
+                obtenerLlave(),
+                obtenerUrl());
+        return cadena;
+    }
 }
