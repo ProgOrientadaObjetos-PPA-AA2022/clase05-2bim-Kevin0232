@@ -4,10 +4,17 @@
  */
 package paquete10;
 
+
 /**
  *
  * @author SALA I
  */
 public class Principal3 {
-    
+
+    public static void main(String[] args) {
+        String nombreArchivo = "Generadores.data";
+        LecturaArchivo lectura = new LecturaArchivo(nombreArchivo);
+        lectura.establecerGeneradores();
+        System.out.println(lectura);
+    }
 }

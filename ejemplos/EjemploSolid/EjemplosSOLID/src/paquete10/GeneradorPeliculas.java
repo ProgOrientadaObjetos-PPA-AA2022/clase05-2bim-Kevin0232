@@ -29,7 +29,7 @@ public class GeneradorPeliculas implements Serializable{
     
     @Override
     public String toString() {
-        String cadena = String.format("%s%s",
+        String cadena = String.format("%s - %s",
                 obtenerLlave(),
                 obtenerUrl());
         return cadena;

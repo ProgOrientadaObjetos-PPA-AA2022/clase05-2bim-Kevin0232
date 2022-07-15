@@ -8,7 +8,6 @@ import java.util.ArrayList;
 
 public class Principal {
     public static void main(String[] args) {
-        ArrayList<GeneradorPeliculas> lista = new ArrayList<>();
         APINetflix api = new APINetflix();
         api.establecerApiKey("123455");
         
@@ -16,7 +15,6 @@ public class Principal {
         gp.establecerLlave(api);
         gp.establecerUrl("http://api.movie?api=");
         System.out.println(gp);
-        lista.add(gp);
         System.out.println("---------------------------");
         
         APIAmazonMovie api2 = new APIAmazonMovie();
@@ -26,7 +24,6 @@ public class Principal {
         gp2.establecerLlave(api2);
         gp2.establecerUrl("http://api.movie?api=");
         System.out.println(gp2);
-        lista.add(gp2);
         System.out.println("---------------------------");
         
         APIStarPlus api3 = new APIStarPlus();
@@ -36,7 +33,6 @@ public class Principal {
         gp3.establecerLlave(api3);
         gp3.establecerUrl("http://api.movie?api=");
         System.out.println(gp3);
-        lista.add(gp3);
         System.out.println("---------------------------");
         
         APIdirectvGo api4 = new APIdirectvGo();
@@ -46,6 +42,5 @@ public class Principal {
         gp4.establecerLlave(api4);
         gp4.establecerUrl("http://api.movie?api=");
         System.out.println(gp4);
-        lista.add(gp4);
     }
 }
