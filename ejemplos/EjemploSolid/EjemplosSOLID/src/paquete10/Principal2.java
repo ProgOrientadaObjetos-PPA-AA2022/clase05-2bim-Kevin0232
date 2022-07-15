@@ -21,7 +21,7 @@ public class Principal2 {
      public static void main(String[] args) {
         // Guardar los objetos de tipo Generador Pelicular en un 
         // archivo serializado
-        String nombreArchivo = "Generadores.data";
+        String nombreArchivo = "GeneradorPelicula.data";
 
         APINetflix api = new APINetflix();
         api.establecerApiKey("123455");

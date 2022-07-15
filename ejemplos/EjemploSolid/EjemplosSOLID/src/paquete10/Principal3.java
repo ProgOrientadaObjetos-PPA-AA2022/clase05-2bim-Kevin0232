@@ -12,7 +12,7 @@ package paquete10;
 public class Principal3 {
 
     public static void main(String[] args) {
-        String nombreArchivo = "Generadores.data";
+        String nombreArchivo = "GeneradorPelicula.data";
         LecturaArchivo lectura = new LecturaArchivo(nombreArchivo);
         lectura.establecerGeneradores();
         System.out.println(lectura);
